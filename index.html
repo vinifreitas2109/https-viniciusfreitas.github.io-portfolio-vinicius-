@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio - Vinicius Freitas</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #101827;
+            color: white;
+            transition: 0.3s;
+        }
+
+        header {
+            background: #172338;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2, h3 {
+            color: #38bdf8;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        button, .botao {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #38bdf8;
+            color: #101827;
+            text-decoration: none;
+        }
+
+        section {
+            min-height: 90vh;
+            padding: 120px 10%;
+            scroll-margin-top: 80px;
+        }
+
+        section h1 {
+            color: #38bdf8;
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        form {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        input, textarea {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        footer {
+            background: #172338;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Tema claro */
+
+        .claro {
+            background: #f1f5f9;
+            color: #172338;
+        }
+
+        .claro header,
+        .claro footer {
+            background: #dbeafe;
+        }
+
+        .claro nav a {
+            color: #172338;
+        }
+
+        .claro .card,
+        .claro form {
+            background: white;
+            color: #172338;
+        }
+
+        /* Menu para celular */
+
+        #menuBtn {
+            display: none;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                justify-content: space-between;
+            }
+
+            #menuBtn {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            nav.aberto {
+                display: flex;
+            }
+
+            section {
+                padding: 90px 7%;
+            }
+
+            section h1 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>Vinicius Freitas</h2>
+
+    <button id="menuBtn" aria-label="Abrir menu">☰</button>
+
+    <button id="temaBtn" aria-label="Alternar tema">☀️</button>
+
+    <nav id="menu">
+        <a href="#formacao">Formação</a>
+        <a href="#conhecimentos">Conhecimentos</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+</header>
+
+
+
+<section id="sobre">
+  
+
+    <h1>Tenho 24 anos</h1>
+
+    <p>
+        Gosto de tecnologia, programação e desenvolvimento
+        de sites e aplicações web.
+    </p>
+
+    <p>
+        Atualmente estudo Análise e Desenvolvimento de
+        Sistemas na UNINTER, buscando aprender novas
+        tecnologias e desenvolver minhas habilidades.
+    </p>
+
+    <p>
+        Meu objetivo é crescer profissionalmente na área
+        de tecnologia e adquirir experiência.
+    </p>
+
+    <a href="#contato" class="botao">Entre em contato</a>
+
+</section>
+
+
+<!-- Formação -->
+
+<section id="formacao">
+
+    <h1>Minha Formação</h1>
+
+    <div class="card">
+
+        <h3>Graduação</h3>
+
+        <p>Curso: Análise e Desenvolvimento de Sistemas.</p>
+
+        <p>Instituição: UNINTER.</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Objetivo de aprendizagem</h3>
+
+        <p>
+            Aprender novas tecnologias e desenvolver
+            conhecimentos na área de programação.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section id="conhecimentos">
+
+    <h1>Meus Conhecimentos</h1>
+
+    <div class="card">
+        <h3>HTML5</h3>
+        <p>Estruturação de páginas para internet.</p>
+    </div>
+
+    <div class="card">
+        <h3>CSS3</h3>
+        <p>Estilização e organização de sites.</p>
+    </div>
+
+    <div class="card">
+        <h3>JavaScript</h3>
+        <p>Criação de interações e funcionalidades.</p>
+    </div>
+
+    <div class="card">
+        <h3>Lógica de programação</h3>
+        <p>Estudo de algoritmos e resolução de problemas.</p>
+    </div>
+
+</section>
+
+
+<!-- Portfólio -->
+
+<section id="portfolio">
+
+    <h1>Meus Projetos</h1>
+
+    <div class="card">
+
+        <h3>Projeto 1 - Página pessoal</h3>
+
+        <p>
+            Desenvolvimento de uma página utilizando HTML5
+            e CSS3.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Projeto 2 - Formulário</h3>
+
+        <p>
+            Criação de formulário com validação
+            utilizando JavaScript.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Projeto 3 - Portfólio pessoal</h3>
+
+        <p>
+            Desenvolvimento deste currículo online
+            com menu e troca de temas.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Objetivos -->
+
+<section id="objetivos">
+
+    <h1>Meus Objetivos</h1>
+
+    <div class="card">
+
+        <p>
+            Quero continuar desenvolvendo meus conhecimentos
+            em programação e tecnologia.
+        </p>
+
+        <p>
+            Busco aprender novas ferramentas, participar
+            de projetos e conquistar oportunidades
+            profissionais na área de desenvolvimento.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Contato -->
+
+<section id="contato">
+
+    <h1>Entre em Contato</h1>
+
+    <form id="formContato">
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+        >
+
+        <textarea
+            id="mensagem"
+            placeholder="Digite sua mensagem"
+            required
+        ></textarea>
+
+        <button type="submit">Enviar mensagem</button>
+
+    </form>
+
+    <p id="resultado" aria-live="polite"></p>
+
+    <p>E-mail: vini.freitas2109@gmail.com</p>
+
+    <p>Telefone: (48) 98885-1854</p>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 - Vinicius Freitas</p>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script>
+
+
+
+let formulario = document.getElementById("formContato");
+
+formulario.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value.trim();
+
+    let email = document.getElementById("email").value.trim();
+
+    let mensagem = document.getElementById("mensagem").value.trim();
+
+    let resultado = document.getElementById("resultado");
+
+
+    
+
+    if (nome === "" || email === "" || mensagem === "") {
+
+        resultado.textContent = "Por favor, preencha todos os campos.";
+
+        resultado.style.color = "red";
+
+        return;
+
+    }
+
+
+   
+
+    let emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailValido.test(email)) {
+
+        resultado.textContent = "Digite um e-mail válido.";
+
+        resultado.style.color = "red";
+
+        return;
+
+    }
+
+
+ 
+
+   
+
+    resultado.textContent = "Obrigado pelo contato, " + nome + "!";
+
+    resultado.style.color = "green";
+
+    formulario.reset();
+
+});
+
+
+
+
+let botaoMenu = document.getElementById("menuBtn");
+
+let menu = document.getElementById("menu");
+
+botaoMenu.addEventListener("click", function() {
+
+    menu.classList.toggle("aberto");
+
+});
+
+
+
+
+let links = document.querySelectorAll("#menu a");
+
+links.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        menu.classList.remove("aberto");
+
+    });
+
+});
+
+
+
+
+let botaoTema = document.getElementById("temaBtn");
+
+botaoTema.addEventListener("click", function() {
+
+    document.body.classList.toggle("claro");
+
+    if (document.body.classList.contains("claro")) {
+
+        botaoTema.textContent = "🌙";
+
+    } else {
+
+        botaoTema.textContent = "☀️";
+
+    }
+
+});
